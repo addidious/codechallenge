@@ -1,0 +1,37 @@
+<section class="showcase">
+  <header>
+    <!-- <div class="toggle" (click)="openMenu()"></div> -->
+    <h2 class="logo"></h2>
+  </header>
+
+  <video src="./assets/img/production ID_3765078.mp4" muted loop autoplay></video>
+
+  <div class="overlay"></div>
+
+  <div class="text">
+    <h2>Davy's Pet Fish Shop</h2>
+  </div>
+
+  <ul class="social">
+    <li><a href="#"><img src="./assets/img/facebook.png"></a></li>
+    <li><a href="#"><img src="./assets/img/twitter.png"></a></li>
+    <li><a href="#"><img src="./assets/img/instagram.png"></a></li>
+  </ul>
+
+</section>
+
+<div class="glass">
+  <img src="./assets/img/logo.png" class="fishLogo">
+  <div class="wrapped-div">
+    <div class="tab-header">
+      <h2 routerLink='/user/login' routerLinkActive='active'>Sign In</h2>
+      <h2 routerLink='/user/registration' routerLinkActive='active'>Sign Up</h2>
+    </div>
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+<!-- <div class="menu">
+  <ul>
+    <li><a href="#">Login</a></li>
+  </ul>
+</div> -->

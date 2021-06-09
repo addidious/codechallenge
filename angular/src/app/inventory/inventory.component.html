@@ -1,0 +1,36 @@
+<main>
+  <section class="inventory-glass">
+    <div class="dashboard">
+      <div class="inventory-user">
+        <img src="../assets/img/logo.png" class="inventory-fishLogo">
+        <h2>Davy Spectre</h2>
+        <p>Owner</p>
+      </div>
+      <div class="link">
+          <app-inventory-form></app-inventory-form>
+      </div>
+      <div class="inventory-logout">
+        <h2 (click)="logout()">Logout</h2>
+        <img src="./assets/img/logout.png"/>
+      </div>
+    </div>
+    <div class="inventory">
+      <div class="category">
+        <h1>Inventory Management System</h1>
+        <input type="hidden">
+      </div>
+      <div class="items">
+        <div class="item" *ngFor="let item of service.list">
+            <img src="./assets/img/noimage.jpg" style = "width:50px; height:50px" (click)="populateForm(item)">
+          <div class="item-info" (click)="populateForm(item)">
+            <p>{{item.itemName}}</p>
+          </div>
+          <h2 class="item-quantity" (click)="populateForm(item)">{{item.quantity}}</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="circle1"></div>
+<div class="circle2"></div>
+
